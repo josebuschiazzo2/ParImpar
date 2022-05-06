@@ -1,9 +1,17 @@
-import "./styles.css";
+/*Ejercicio – Par/Impar
+• Desarrollar un algoritmo que dado un número,
+ingresado por el usuario determine si el
+número es par o impar y le informe al usuario
+• En el caso de ser 0 (cero) el algoritmo deberá
+informarlo*/
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+let num : number = Number (prompt("Ingrese el numero a evaluar"));
+if (num===0) {
+  console.log("Es el número 0, el cual no se puede determinar");
+  } else {
+      if (num%2===0) { 
+        console.log ("Su número es Par");
+      } else {
+         console.log ("Su número es impar");
+        }
+  }
